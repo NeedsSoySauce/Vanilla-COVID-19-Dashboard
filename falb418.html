@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en-NZ">
+    <head>
+        <link rel="stylesheet" href="falb418.css" />
+        <script src="falb418.js" defer></script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/5/55/Coronavirus_cartoon.svg" />
+        <title>COVID-19 Dashboard</title>
+    </head>
+
+    <body>
+        <div class="hcenter vcenter nav">
+            <h1>COVID-19 Dashboard</h1>
+
+            <div class="hcenter vcenter">
+                <label for="country-select">Country:</label>
+                <select id="country-select">
+                    <option value="WORLDWIDE" selected>Worldwide</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="page-loading-container" class="hcenter">
+            <div class="loading-indicator">
+                <div></div>
+            </div>
+        </div>
+
+        <div id="page-content">
+            <div class="hcenter flex-wrap">
+                <div class="card vcenter flex-column">
+                    <h3>Confirmed Cases</h3>
+                    <div class="summary-value" id="summary-confirmed-cases-total">-</div>
+                    <div class="summary-delta" id="summary-confirmed-cases-delta">-</div>
+                </div>
+                <div class="card vcenter flex-column">
+                    <h3>Active Cases</h3>
+                    <div class="summary-value" id="summary-active-cases-total">-</div>
+                    <div class="summary-delta" id="summary-active-cases-delta">-</div>
+                </div>
+                <div class="card vcenter flex-column">
+                    <h3>Recovered</h3>
+                    <div class="summary-value" id="summary-recovered-total">-</div>
+                    <div class="summary-delta" id="summary-recovered-delta">-</div>
+                </div>
+                <div class="card vcenter flex-column">
+                    <h3>Deaths</h3>
+                    <div class="summary-value" id="summary-deaths-total">-</div>
+                    <div class="summary-delta" id="summary-deaths-delta">-</div>
+                </div>
+            </div>
+
+            <hr />
+
+            <h1 class="hcenter">Confirmed Cases</h1>
+            <div class="chart-container" id="confirmed-cases-chart-container"></div>
+
+            <hr />
+
+            <h1 class="hcenter">Active Cases</h1>
+            <div class="chart-container" id="active-cases-chart-container"></div>
+
+            <hr />
+
+            <h1 class="hcenter">Recovered</h1>
+            <div class="chart-container" id="recovered-chart-container"></div>
+
+            <hr />
+
+            <h1 class="hcenter">Deaths</h1>
+            <div class="chart-container" id="deaths-chart-container"></div>
+        </div>
+
+        <footer>
+            <p>Data sourced from <a href="https://covid19api.com/">covid19api</a>.</p>
+        </footer>
+    </body>
+</html>

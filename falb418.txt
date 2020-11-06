@@ -1,0 +1,20 @@
+This dashboard uses a design which is minimal and unobtrusive. A simple
+black-on-white colorscheme with some gray tones are used, with divisions added 
+to help break up the page. The page is also fully responsive using a few media
+queries as well as ResizeObservers to redraw the charts to best-fit the available
+space. The charts also contain a minimal amount of interactivity - clients can 
+hover over bars to see their label and value.
+
+The development process involved setting up a base project using the design I
+used for the previous assignments, and from there adding the application-specific
+features. The previous assignments were a big help in completing this one -
+specifically, the assignment on SVGs and the content of Quiz 2 were very relevant.
+
+Building charts without the use of libraries is more challenging than expected, 
+and a particular development challenge faced was the getting the axis labels to
+not overlap. A solution I developed was to approximate the length of the axis
+labels and use that to space them out. The result is that not all labels are shown,
+but a little interactivity (hover to see label and value) helped to alleviate this.
+
+Overall, I'm very pleased with the assignments so far and feel more confident in
+in building web applications to solve problems I may have. 
